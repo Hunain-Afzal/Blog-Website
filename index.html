@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1200">
+     <meta name="viewport" content="width=1200">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
@@ -35,10 +35,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
     <div class="hero-content">
         <h1>
-    My <br>
-    Lifestyle <br>
-    Blog
-</h1>
+            My <br>
+            Lifestyle <br>
+            Blog
+        </h1>
     </div>
 </section>
 <!-- ==========================
@@ -512,7 +512,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
         <h2>Subscribe</h2>
 
-        <form>
+        <!-- Subscribe Form -->
+        <form id="subscribe-form">
 
             <div class="input-group">
 
@@ -521,7 +522,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 <input
                     type="email"
                     id="email"
-                    placeholder="address@email.com" required
+                    placeholder="address@email.com"
+                    required
                 >
 
             </div>
@@ -532,13 +534,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
                 <textarea
                     id="message"
-                    placeholder="Enter your message here" required
+                    placeholder="Enter your message here"
+                    required
                 ></textarea>
 
             </div>
 
+            <!-- Submit Button -->
             <button type="submit">
-               <a href="gmail.com">send</a> 
+                Send
             </button>
 
         </form>
@@ -592,5 +596,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     
 
 </div>
+<!-- Back to Top Button -->
+<button id="back-to-top">↑</button>
+
+<script src="script.js"></script>
 </body>
 </html>
