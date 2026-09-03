@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1200">
+     <meta name="viewport" content="width=1200">
     <title>Document</title>
      <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
@@ -101,7 +101,8 @@ BLOG STATS
 
         <h2>Subscribe</h2>
 
-        <form>
+        <!-- Subscribe Form -->
+        <form id="subscribe-form">
 
             <div class="input-group">
 
@@ -110,7 +111,8 @@ BLOG STATS
                 <input
                     type="email"
                     id="email"
-                    placeholder="address@email.com" required
+                    placeholder="address@email.com"
+                    required
                 >
 
             </div>
@@ -121,13 +123,15 @@ BLOG STATS
 
                 <textarea
                     id="message"
-                    placeholder="Enter your message here" required
+                    placeholder="Enter your message here"
+                    required
                 ></textarea>
 
             </div>
 
+            <!-- Submit Button -->
             <button type="submit">
-               <a href="gmail.com">send</a> 
+                Send
             </button>
 
         </form>
@@ -178,5 +182,9 @@ BLOG STATS
     </p>
 
 </div>
+<!-- Back to Top Button -->
+<button id="back-to-top">↑</button>
+
+<script src="script.js"></script>
 </body>
 </html>
