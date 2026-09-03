@@ -1,6 +1,6 @@
 # Blog Website
 
-A responsive blog website created as a frontend web development assignment by cloning a WebWave template using HTML and CSS.
+A  blog website created as a frontend web development assignment by cloning a WebWave template using HTML,CSS and Javascript.
 
 ## 🌐 Live Website
 
@@ -14,3 +14,4 @@ A responsive blog website created as a frontend web development assignment by cl
 
 - HTML
 - CSS
+- JAVASCRIPT
