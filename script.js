@@ -1,46 +1,58 @@
 /* =========================================
    Welcome Alert
 ========================================= */
-let currentHour = new Date().getHours();
+if (window.location.pathname.includes("index.html")) {
 
-if (currentHour < 12) {
-    alert("Good Morning! Welcome to My Lifestyle Blog");
-}
-else if (currentHour < 18) {
-    alert("Good Afternoon! Welcome to My Lifestyle Blog");
-}
-else {
-    alert("Good Evening! Welcome to My Lifestyle Blog");
+    /* Current time ka hour lena */
+    let currentHour = new Date().getHours();
+
+    /* Time ke according welcome message show karna */
+    if (currentHour < 12) {
+        alert("Good Morning! Welcome to My Lifestyle Blog");
+    }
+    else if (currentHour < 18) {
+        alert("Good Afternoon! Welcome to My Lifestyle Blog");
+    }
+    else {
+        alert("Good Evening! Welcome to My Lifestyle Blog");
+    }
+
 }
 /* =========================================
    SUBSCRIBE FORM VALIDATION
 ========================================= */
 
-/* Form aur input elements ko select karna */
 let subscribeForm = document.getElementById("subscribe-form");
-let emailInput = document.getElementById("email");
-let messageInput = document.getElementById("message");
 
-subscribeForm.addEventListener("submit", function(event) {
+if (subscribeForm) {
 
-    event.preventDefault();
+    let emailInput = document.getElementById("email");
+    let messageInput = document.getElementById("message");
 
-    let email = emailInput.value;
-    let message = messageInput.value;
 
-    if (email === "" || message === "") {
+    /* Form submit hone par ye function chalega */
+    subscribeForm.addEventListener("submit", function(event) {
 
-        alert("Please fill in all fields.");
+        event.preventDefault();
 
-    }
-    else {
+        let email = emailInput.value;
+        let message = messageInput.value;
 
-        alert("Thank you for subscribing!");
+        if (email === "" || message === "") {a 
 
-        subscribeForm.reset();
-    }
+            alert("Please fill in all fields.");
 
-});
+        }
+        else {
+
+            alert("Thank you for subscribing!");
+
+            subscribeForm.reset();
+        }
+
+    });
+
+}
 /* =========================================
    BACK TO TOP BUTTON
 ========================================= */
