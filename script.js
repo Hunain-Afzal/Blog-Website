@@ -1,20 +1,33 @@
 /* =========================================
    Welcome Alert
 ========================================= */
-if (window.location.pathname.includes("index.html")) {
+let currentPage = window.location.pathname;
+
+/* Check karna ke user Home Page par hai */
+if (
+    currentPage.includes("index.html") ||
+    currentPage === "/Blog-Website/" ||
+    currentPage === "/"
+) {
 
     /* Current time ka hour lena */
     let currentHour = new Date().getHours();
 
     /* Time ke according welcome message show karna */
     if (currentHour < 12) {
+
         alert("Good Morning! Welcome to My Lifestyle Blog");
+
     }
     else if (currentHour < 18) {
+
         alert("Good Afternoon! Welcome to My Lifestyle Blog");
+
     }
     else {
+
         alert("Good Evening! Welcome to My Lifestyle Blog");
+
     }
 
 }
