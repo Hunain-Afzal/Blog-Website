@@ -1,7 +1,6 @@
 /* =========================================
    WELCOME ALERT
 ========================================= */
-alert("JavaScript is working!");
 /* Check karna ke Welcome Alert pehle show hua hai ya nahi */
 let welcomeShown = sessionStorage.getItem("welcomeShown");
 
