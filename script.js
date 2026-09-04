@@ -46,7 +46,7 @@ if (subscribeForm) {
         let email = emailInput.value;
         let message = messageInput.value;
 
-        if (email === "" || message === "") 
+        if (email === "" || message === "") { 
 
             alert("Please fill in all fields.");
 
