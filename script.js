@@ -7,7 +7,7 @@ let welcomeShown = sessionStorage.getItem("welcomeShown");
 if (welcomeShown !== "true") {
 
     let currentHour = new Date().getHours();
-
+   
     if (currentHour < 12) {
 
         alert("Good Morning! Welcome to My Lifestyle Blog");
@@ -22,31 +22,30 @@ if (welcomeShown !== "true") {
 
         alert("Good Evening! Welcome to My Lifestyle Blog");
 
-    
+    }
     sessionStorage.setItem("welcomeShown", "true");
 
 }
+
+
 /* =========================================
    SUBSCRIBE FORM VALIDATION
 ========================================= */
 
 let subscribeForm = document.getElementById("subscribe-form");
-
 if (subscribeForm) {
 
     let emailInput = document.getElementById("email");
     let messageInput = document.getElementById("message");
 
+   subscribeForm.addEventListener("submit", function(event) {
 
-    /* Form submit hone par ye function chalega */
-    subscribeForm.addEventListener("submit", function(event) {
-
-        event.preventDefault();
+    event.preventDefault();
 
         let email = emailInput.value;
         let message = messageInput.value;
 
-        if (email === "" || message === "") { 
+           if (email === "" || message === "") {
 
             alert("Please fill in all fields.");
 
@@ -54,38 +53,45 @@ if (subscribeForm) {
         else {
 
             alert("Thank you for subscribing!");
-
             subscribeForm.reset();
+
         }
 
     });
 
 }
+
+
 /* =========================================
    BACK TO TOP BUTTON
 ========================================= */
 
 let backToTopButton = document.getElementById("back-to-top");
 
+if (backToTopButton) {
 
-window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function() {
 
-    if (window.scrollY > 300) {
+        if (window.scrollY > 300) {
 
-        backToTopButton.style.display = "block";
+            backToTopButton.style.display = "block";
 
-    } else {
+        }
+        else {
 
-        backToTopButton.style.display = "none";
-    }
+            backToTopButton.style.display = "none";
 
-});
+        }
 
-backToTopButton.addEventListener("click", function() {
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
     });
 
-});
+    backToTopButton.addEventListener("click", function() {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
